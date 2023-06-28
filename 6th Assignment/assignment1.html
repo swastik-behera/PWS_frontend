@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navigation-bar {
+            background-color: #242b2e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 20px;
+            padding-top: 6px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .login-btn a {
+            background-color: #0072e1;
+            border: none;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 30px;
+            font-size: 12px;
+            border-radius: 2px;
+            margin-right: 20px;
+        }
+
+        .fa-sharp {
+            font-size: 25px;
+            margin-right: 20px;
+            color: #fff;
+            cursor: pointer; 
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .nav-links,
+            .login-btn {
+                display: none;
+            }
+
+            .fa-sharp {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="logo">
+                <img src="./assets/ibm.png" width="50px" alt="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="login-btn">
+                <a href="#">Login</a>
+            </div>
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </nav>
+    </header>
+</body>
+
+</html>

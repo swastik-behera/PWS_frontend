@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .container h1 {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 20px 0 30px 0;
+            text-decoration: underline;
+            font-size: 27px;
+        }
+        
+        .img-item img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: center;
+            display: inline-block;
+        }
+
+
+        .images div {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images > .img-item > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .images {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, minmax(350px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+        }
+
+        @media screen and (max-width: 1185px) {
+            .images {
+                grid-template-columns: repeat(2, minmax(350px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 785px) {
+            .images {
+                grid-template-columns: repeat(1, minmax(250px, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 610px) {
+            body {
+                padding: 0 10px;
+            }
+
+            .container {
+                width: 100%;
+            }
+            
+            .images {
+                grid-template-columns: repeat(1, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random images</h1>
+        <div class="images">
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+            <div class="img-item"><img src="./assets/beach (10).jpg" alt="beach"></div>
+        </div>
+    </div>
+</body>
+
+</html>
