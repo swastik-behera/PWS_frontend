@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Six</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            margin: 50px auto;
+            height: 480px;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .heading {
+            margin-top: -25px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .heading h1 {
+            text-decoration: underline;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .card {
+            height: 320px;
+            width: 519px;
+            transition: .5s;
+        }
+
+        .card img {
+            width: 509px;
+            border-radius: 10px;
+        }
+        
+        .card:hover {
+            filter: grayscale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Hover To Have A GrayScale Look.</h1>
+        </div>
+        <div class="card">
+            <img src="./assets/umbrella.jpg" alt=Lily">
+        </div>
+    </div>
+</body>
+</html>
