@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment One</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ebebeb;
+        }
+
+        .card {
+            width: 360px;
+            height: 280px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content h1 {
+            font-size: 23px;
+            margin-top: 30px;
+        }
+
+        .input {
+            margin-top: 20px;
+            width: 85%;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 0 0 15px 0;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #757575;
+            font-size: 12px;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+        }
+
+        .submit {
+            margin-top: 30px;
+            width: 85%;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            border: none;
+            background-color: #1e87f0;
+            padding: 10px 5px;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="content">
+            <h1>Login</h1>
+            <div class="input user">
+                <input type="email" placeholder="Username" name="username" />
+            </div>
+            <div class="input pass">
+                <input type="password" placeholder="Password" name="password" />
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Two</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --margin: 17px;
+            --bg-b: #000;
+            --bg-w: #fff;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            height: 500px;
+            background-color: var(--bg-w);
+            border-radius: 5px;
+        }
+
+        .card>h1 {
+            font-size: 25px;
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            margin-left: var(--margin);
+        }
+
+        input[type],
+        select {
+            width: 90%;
+            margin-left: var(--margin);
+            margin-bottom: var(--margin);
+            padding: 5px 0;
+        }
+
+        select {
+            font-size: 12px;
+        }
+
+        .input input[type="submit"] {
+            border: none;
+            background-color: var(--bg-b);
+            color: var(--bg-w);
+            border-radius: 3px;
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .input input[type="submit"]:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Signup</h1>
+        <div class="form">
+            <label for="name">Name:</label>
+            <div class="input">
+                <input type="text" name="name" id="name">
+            </div>
+            <label for="select">Batch:</label>
+            <select name="select" id="select">
+                <option value="sigma">Sigma 2.0</option>
+                <option value="java">Java with DSA</option>
+            </select><br>
+            <label for="age">Age:</label>
+            <div class="input">
+                <input type="text" name="age" id="age">
+            </div>
+            <label for="email">Email:</label>
+            <div class="input">
+                <input type="email" name="email" id="email">
+            </div>
+            <label for="pass">Password:</label>
+            <div class="input">
+                <input type="password" name="password" id="pass">
+            </div>
+            <div class="input">
+                <input type="submit" value="Signup">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
