@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            margin: 50px auto;
+            height: 480px;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .heading {
+            font-family: 'Poppins', sans-serif;
+            margin-top: -25px;
+        }
+
+        .heading h1 {
+            text-decoration: underline;
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .card {
+            height: 320px;
+            width: 519px;
+            filter: blur(10px);
+            transition: .5s;
+        }
+
+        .card img {
+            border: 5px solid black;
+        }
+
+        .card:hover {
+            filter: blur(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Hover To Reveal The Image.</h1>
+        </div>
+        <div class="card">
+            <img src="./assets/beach (10).jpg" alt="beach">
+        </div>
+    </div>
+</body>
+</html>
