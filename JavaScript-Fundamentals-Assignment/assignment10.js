@@ -6,3 +6,12 @@ for (let i = 0; i < arr.length; i++) {
     console.log(positive);
   }
 }
+
+
+/*==============
+    Output:
+      1
+      2
+      5
+      7
+==============*/

@@ -14,3 +14,9 @@ switch (username) {
     console.log("Invalid credential");
     break;
 }
+
+
+/*==============
+    Output:
+      Login Successful
+==============*/

@@ -13,3 +13,9 @@ for (let i = 0; i < arr.length; i++) {
 if (!foundString) {
   console.log("No string found in the array");
 }
+
+
+/*==============
+    Output:
+      Found the First String and it's value : Mithun
+==============*/

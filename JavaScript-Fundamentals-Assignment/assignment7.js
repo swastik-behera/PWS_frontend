@@ -5,3 +5,15 @@ for (let i = 0; i < shoppingListApp.length; i++) {
     const items = shoppingListApp[i];
     console.log(items);
 }
+
+
+/*==============
+    Output:
+        All the items in the shopping list array are :
+            Mobiles
+            Keyboard
+            Mouse
+            Accessories
+            Adaptor
+            Earphones
+==============*/

@@ -19,3 +19,11 @@ if (typeof age !== "number") {
 } else {
   console.log("Age is valid.");
 }
+
+
+/*==============
+    Output:
+      Name is valid.
+      Email is valid.
+      Age is valid.
+==============*/

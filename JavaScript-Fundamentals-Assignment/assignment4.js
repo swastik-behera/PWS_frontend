@@ -10,3 +10,9 @@ console.log(
   "The total ticket price is ",
   numberOfChilds * 100 + numberOfAdults * 150 + numberOfSeniors * 120
 );
+
+
+/*==============
+    Output:
+      The total ticket price is  470
+==============*/
