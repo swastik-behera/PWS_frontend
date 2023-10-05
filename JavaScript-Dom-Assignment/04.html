@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Four</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      div {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form id="myForm">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="Name:"
+          id="name"
+          placeholder="(Minimum 3 character)" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter Your Email" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="(Minimum 8 character)" />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script>
+      const myForm = document.querySelector("#myForm");
+
+      myForm.addEventListener("submit", function (event) {
+        const name = document.querySelector("#name");
+        const password = document.querySelector("#password");
+
+        if (name.value.length < 3) {
+          alert("The username must be at least 3 characters long.");
+          event.preventDefault();
+          return;
+        }
+
+        if (password.value.length < 8) {
+          alert("The password must be at least 8 characters long.");
+          event.preventDefault();
+          return;
+        }
+
+        alert("Form validation successful!");
+      });
+    </script>
+  </body>
+</html>

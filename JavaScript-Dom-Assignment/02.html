@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Two</title>
+    <style>
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>This is <span id="light-dark">Light</span> Mode</h1>
+    <button id="toggle-btn">Toggle Theme</button>
+    <script>
+      const toggle_btn = document.querySelector("#toggle-btn");
+      const body = document.querySelector("body");
+      const span = document.querySelector("#light-dark")
+
+      function toggleTheme() {
+        if (body.classList.contains("dark-mode")) {
+            body.classList.remove("dark-mode")
+            span.innerHTML = "Light"
+        } else {
+            body.classList.add("dark-mode")
+            span.innerHTML = "Dark"
+        }
+      }
+
+      toggle_btn.addEventListener("click", toggleTheme)
+    </script>
+  </body>
+</html>

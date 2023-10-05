@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Nine</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        #login {
+            margin: 0 10px 0 0;
+            cursor: pointer;
+        }
+
+        #logout {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button id="login">Login</button>
+        <button id="logout">Logout</button>
+        <h1 id="in-out">User Has Not logged In</h1>
+    </section>
+    <script>
+        const login = document.querySelector("#login")
+        const logout = document.querySelector("#logout")
+        
+        const loginStatus = localStorage.getItem("loginStatus")
+
+        const heading = document.querySelector("#in-out")
+
+        heading.textContent = loginStatus ? "You are logged in." : "You are not logged in."
+
+        login.addEventListener("click", function() {
+            localStorage.setItem("loginStatus", true)
+            heading.textContent = "You are logged in."
+        })
+
+        logout.addEventListener("click", function() {
+            localStorage.removeItem("loginStatus")
+            heading.textContent = "You are not logged in."
+        })
+    </script>
+</body>
+</html>

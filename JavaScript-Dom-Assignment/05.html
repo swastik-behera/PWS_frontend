@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+    <style>
+        body {
+            margin-left: 40px;
+        }
+
+        button {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Your Image is visible.</h1>
+        <button>Toggle Image</button>
+        <img src="https://images.pexels.com/photos/18148936/pexels-photo-18148936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="500px" alt="fruits">
+    </section>
+    <script>
+        const btn = document.querySelector("button")
+        const img = document.querySelector("img")
+        
+        function toggleBtn() {
+            const h1 = document.querySelector("h1")
+
+            if (img.classList.contains("hide")) {
+                img.classList.remove("hide")
+                h1.innerText = "Your Image is visible."
+            } else {
+                h1.innerText = "Your Image is hidden."
+                img.classList.add("hide")
+            }
+        }
+
+        btn.addEventListener("click", toggleBtn)
+    </script>
+</body>
+</html>

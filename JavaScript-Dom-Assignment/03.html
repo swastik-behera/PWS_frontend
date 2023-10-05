@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Three</title>
+    <style>
+      button,
+      h2 {
+        display: inline;
+      }
+
+      button {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+      }
+
+      h2 {
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <button id="decreament">-</button>
+    <h2 id="number">0</h2>
+    <button id="increament">+</button>
+    <script>
+      const increament = document.querySelector("#increament");
+      const decreament = document.querySelector("#decreament");
+      const number = document.querySelector("#number");
+
+      function increamentCount() {
+        number.textContent++;
+      }
+
+      function decreamentCount() {
+        number.textContent--;
+        if (number.textContent < 0) {
+          alert("The counter cannot go below zero.");
+        }
+      }
+
+      increament.addEventListener("click", increamentCount);
+      decreament.addEventListener("click", decreamentCount);
+    </script>
+  </body>
+</html>

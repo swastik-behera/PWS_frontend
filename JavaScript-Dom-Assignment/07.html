@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Seven</title>
+  </head>
+  <body">
+    <input
+      type="text"
+      name="text"
+      id="search-input"
+      placeholder="Search for items" />
+    <h1>Result:</h1>
+    <ul id="item-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Tailwind CSS</li>
+      <li>GitHub</li>
+      <li>JavaScript</li>
+    </ul>
+    <script>
+      const items = ["HTML", "CSS", "Tailwind CSS", "GitHub", "JavaScript"];
+
+      const searchInput = document.querySelector("#search-input")
+      const itemList = document.querySelector("#item-list")
+
+      searchInput.addEventListener("keyup", function() {
+        const inputValue = searchInput.value
+
+        const filteredItems = items.filter((item) => item.includes(inputValue))
+
+        itemList.innerHTML = "";
+        for (const item of filteredItems) {
+          const listItem = document.createElement("li")
+          listItem.textContent = item;
+          itemList.appendChild(listItem);
+        }
+      })
+    </script>
+  </body>
+</html>
